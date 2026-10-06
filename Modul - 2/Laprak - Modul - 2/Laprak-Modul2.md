@@ -223,7 +223,7 @@ int main(){
 ```
 Program ini menginisialisasi array karakter arr berukuran 6 elemen, lalu mencetak nilai pada indeks ke-3 (b) dan alamat memori elemen pada indeks ke-4 menggunakan operator &.
 
-### 9. Call by Pointer Refrence Value
+### 9. Call by Pointer Reference Value
 
 ```C++
 #include <iostream>
