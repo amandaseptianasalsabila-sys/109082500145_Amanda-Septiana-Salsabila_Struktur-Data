@@ -312,8 +312,7 @@ int main() {
 //     return 0;
 // }
 ```
-Program ini menginisialisasi array karakter arr berukuran 6 elemen, lalu mencetak nilai pada indeks ke-3 (b) dan alamat memori elemen pada indeks ke-4 menggunakan operator &.Kode ini mendemonstrasikan tiga cara pelewatan parameter di C++, yaitu Call by Pointer (aktif, mengubah nilai asli via alamat memori), Call by Reference (komentar, mengubah nilai asli via referensi langsung), dan Call by Value (komentar, hanya menyalin nilai sehingga nilai asli tidak berubah).
-
+Program ini mendemonstrasikan tiga cara pelewatan parameter di C++, yaitu Call by Pointer (aktif, mengubah nilai asli via alamat memori), Call by Reference (komentar, mengubah nilai asli via referensi langsung), dan Call by Value (komentar, hanya menyalin nilai sehingga nilai asli tidak berubah).
 
 ## Unguided 
 
