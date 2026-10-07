@@ -24,22 +24,28 @@ int main() {
     int b = 6;
     int c = 8;
 
-    cout << "Sebelum ditukar : " << endl;
+    cout << "Sebelum ditukar: " << endl;
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
     cout << "c = " << c << endl;
 
     tukarPointer(&a, &b, &c);
 
-    cout << "\nSetelah ditukar Pointer : " << endl;
+    cout << "\nSetelah ditukar Pointer: " << endl;
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
     cout << "c = " << c << endl;
+
+    a = 4;
+    b = 6;
+    c = 8;
 
     tukarReference(a, b, c);
 
-    cout << "\nSetelah ditukar Reference : " << endl;
+    cout << "\nSetelah ditukar Reference: " << endl;
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
     cout << "c = " << c << endl;
+
+    return 0;
 }
