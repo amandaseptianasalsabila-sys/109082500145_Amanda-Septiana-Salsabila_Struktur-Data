@@ -25,7 +25,7 @@ Dalam pemrograman terstruktur, program yang kompleks perlu dipecah menjadi modul
 Parameter fungsi terbagi menjadi parameter formal (variabel yang ada pada daftar parameter ketika mendefinisikan fungsi) dan parameter aktual (parameter yang dipakai untuk memanggil fungsi). Parameter aktual tidak harus berupa variabel, melainkan bisa berupa konstanta atau ungkapan[1].
 1. Pemanggilan dengan Nilai (Call by Value) : Pada pemanggilan dengan nilai, nilai dari parameter aktual akan disalin ke dalam parameter formal. Parameter aktual tidak akan berubah meskipun parameter formalnya berubah[1].
 2. Pemanggilan dengan Pointer (Call by Pointer) : Pemanggilan dengan pointer merupakan cara untuk melewatkan alamat suatu variabel ke dalam suatu fungsi menggunakan operator &. Dengan cara ini, fungsi dapat mengubah nilai dari variabel aktual yang dilewatkan ke dalam fungsi karena yang diproses adalah alamat memorinya[1].
-3. Pemanggilan dengan Referensi (Call by Reference) : Pemanggilan dengan referensi juga merupakan cara untuk melewatkan alamat suatu variabel ke dalam fungsi. Namun, operator & diletakkan pada deklarasi parameter formal (misal: int &x). Cara ini dapat mengubah nilai variabel aktual yang ada di luar fungsi tanpa perlu menambahkan operator tambahan saat pemanggilan fungsi[1].
+3. Pemanggilan dengan Referensi (Call by Reference) : Pemanggilan dengan referensi juga merupakan cara untuk melewatkan alamat suatu variabel ke dalam fungsi. Namun, operator & diletakkan pada deklarasi parameter formal (misal : int &x). Cara ini dapat mengubah nilai variabel aktual yang ada di luar fungsi tanpa perlu menambahkan operator tambahan saat pemanggilan fungsi[1].
 
 ## Guided 
 
@@ -223,7 +223,7 @@ int main(){
 ```
 Program ini menginisialisasi array karakter arr berukuran 6 elemen, lalu mencetak nilai pada indeks ke-3 (b) dan alamat memori elemen pada indeks ke-4 menggunakan operator &.
 
-### 9. Call by Pointer Refrence Value
+### 9. Call by Pointer Reference Value
 
 ```C++
 #include <iostream>
@@ -312,8 +312,7 @@ int main() {
 //     return 0;
 // }
 ```
-Program ini menginisialisasi array karakter arr berukuran 6 elemen, lalu mencetak nilai pada indeks ke-3 (b) dan alamat memori elemen pada indeks ke-4 menggunakan operator &.Kode ini mendemonstrasikan tiga cara pelewatan parameter di C++, yaitu Call by Pointer (aktif, mengubah nilai asli via alamat memori), Call by Reference (komentar, mengubah nilai asli via referensi langsung), dan Call by Value (komentar, hanya menyalin nilai sehingga nilai asli tidak berubah).
-
+Program ini mendemonstrasikan tiga cara pelewatan parameter di C++, yaitu Call by Pointer (aktif, mengubah nilai asli via alamat memori), Call by Reference (komentar, mengubah nilai asli via referensi langsung), dan Call by Value (komentar, hanya menyalin nilai sehingga nilai asli tidak berubah).
 
 ## Unguided 
 
@@ -546,7 +545,7 @@ void hitungRataRata(int *pa, int n) {
 ![Screenshot Output Unguided 3_2](https://github.com/amandaseptianasalsabila-sys/109082500145_Amanda-Septiana-Salsabila_Struktur-Data/blob/main/Modul%20-%202/Unguided/Unguided%20-%203/Screenshot%202026-10-06%20232759.png?raw=true)
 ![Screenshot Output Unguided 3_2](https://github.com/amandaseptianasalsabila-sys/109082500145_Amanda-Septiana-Salsabila_Struktur-Data/blob/main/Modul%20-%202/Unguided/Unguided%20-%203/Screenshot%202026-10-06%20232813.png?raw=true)
 
-Program ini mengimplementasikan operasi pada array 1 dimensi arrA berukuran 10 elemen menggunakan konsep pointer untuk mengakses data. Program memiliki tiga sub-program: fungsi cariMinimum() dan cariMaksimum() yang mengembalikan nilai integer, serta prosedur void hitungRataRata() yang langsung mencetak hasil. Pada fungsi main(), array diakses menggunakan pointer &arrA[0] (alamat elemen pertama) yang dilewatkan ke sub-program, lalu di dalam fungsi/ prosedur nilai array diakses dengan notasi pointer *(pa + i) sebagai alternatif dari pa[i]. Program utama menggunakan struktur do-while dan switch-case untuk menampilkan menu interaktif yang memungkinkan pengguna memilih operasi (tampilkan isi array, cari maksimum, cari minimum, hitung rata-rata, atau keluar) secara berulang hingga memilih opsi 0.
+Program ini mengimplementasikan operasi pada array 1 dimensi arrA berukuran 10 elemen menggunakan konsep pointer untuk mengakses data. Program memiliki tiga sub-program, yaitu fungsi cariMinimum() dan cariMaksimum() yang mengembalikan nilai integer, serta prosedur void hitungRataRata() yang langsung mencetak hasil. Pada fungsi main(), array diakses menggunakan pointer &arrA[0] (alamat elemen pertama) yang dilewatkan ke sub-program, lalu di dalam fungsi/ prosedur nilai array diakses dengan notasi pointer *(pa + i) sebagai alternatif dari pa[i]. Program utama menggunakan struktur do-while dan switch-case untuk menampilkan menu interaktif yang memungkinkan pengguna memilih operasi (tampilkan isi array, cari maksimum, cari minimum, hitung rata-rata, atau keluar) secara berulang hingga memilih opsi 0.
 
 ## Kesimpulan
 Praktikum Modul 2 Struktur Data berfokus pada penguasaan konsep dasar manipulasi data dan memori dalam bahasa C++, yang mencakup penggunaan array (satu dimensi, dua dimensi/matriks, dan berdimensi banyak) untuk mengelola kumpulan data bertipe sama, serta pemahaman mendalam tentang pointer dan alamat memori menggunakan operator alamat (&) dan dereference (*). Modul ini juga mengajarkan implementasi pemrograman modular melalui fungsi (yang mengembalikan nilai) dan prosedur void (yang tidak mengembalikan nilai), serta membedakan teknik pelewatan parameter (parameter passing) seperti Call by Value (menyalin nilai tanpa mengubah data asli), Call by Pointer (mengirim alamat memori), dan Call by Reference (mengirim referensi langsung) yang memungkinkan perubahan nilai variabel asli di luar fungsi. Konsep-konsep tersebut dipraktikkan secara langsung melalui studi kasus seperti operasi matriks 3x3, penukaran nilai tiga variabel, dan pengolahan data array satu dimensi (mencari minimum, maksimum, dan rata-rata) menggunakan menu interaktif switch-case, sehingga membentuk fondasi yang kuat untuk manipulasi data yang lebih terstruktur dan efisien.
