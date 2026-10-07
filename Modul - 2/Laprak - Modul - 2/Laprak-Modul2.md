@@ -25,7 +25,7 @@ Dalam pemrograman terstruktur, program yang kompleks perlu dipecah menjadi modul
 Parameter fungsi terbagi menjadi parameter formal (variabel yang ada pada daftar parameter ketika mendefinisikan fungsi) dan parameter aktual (parameter yang dipakai untuk memanggil fungsi). Parameter aktual tidak harus berupa variabel, melainkan bisa berupa konstanta atau ungkapan[1].
 1. Pemanggilan dengan Nilai (Call by Value) : Pada pemanggilan dengan nilai, nilai dari parameter aktual akan disalin ke dalam parameter formal. Parameter aktual tidak akan berubah meskipun parameter formalnya berubah[1].
 2. Pemanggilan dengan Pointer (Call by Pointer) : Pemanggilan dengan pointer merupakan cara untuk melewatkan alamat suatu variabel ke dalam suatu fungsi menggunakan operator &. Dengan cara ini, fungsi dapat mengubah nilai dari variabel aktual yang dilewatkan ke dalam fungsi karena yang diproses adalah alamat memorinya[1].
-3. Pemanggilan dengan Referensi (Call by Reference) : Pemanggilan dengan referensi juga merupakan cara untuk melewatkan alamat suatu variabel ke dalam fungsi. Namun, operator & diletakkan pada deklarasi parameter formal (misal: int &x). Cara ini dapat mengubah nilai variabel aktual yang ada di luar fungsi tanpa perlu menambahkan operator tambahan saat pemanggilan fungsi[1].
+3. Pemanggilan dengan Referensi (Call by Reference) : Pemanggilan dengan referensi juga merupakan cara untuk melewatkan alamat suatu variabel ke dalam fungsi. Namun, operator & diletakkan pada deklarasi parameter formal (misal : int &x). Cara ini dapat mengubah nilai variabel aktual yang ada di luar fungsi tanpa perlu menambahkan operator tambahan saat pemanggilan fungsi[1].
 
 ## Guided 
 
