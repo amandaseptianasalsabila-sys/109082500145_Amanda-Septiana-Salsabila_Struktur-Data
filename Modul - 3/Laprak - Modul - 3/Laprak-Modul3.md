@@ -30,7 +30,7 @@ ADT biasanya diimplementasikan menjadi dua modul utama dan satu modul antarmuka 
 - Body/realisasi dari primitif pada file .cpp.
 - Driver, yaitu program utama (main.cpp) yang menggunakan ADT tersebut.
 #### 3. Spesifikasi dan Realisasi Primitif
-Pada file .h, spesifikasi type mengikuti kaidah bahasa yang dipakai. Spesifikasi primitif mengikuti kaidah dalam konteks prosedural: untuk fungsi dituliskan nama, domain, range, dan prekondisi jika ada, sedangkan untuk prosedur dituliskan initial state, final state, dan proses yang dilakukan [1]. Pada file .cpp, realisasi primitif berupa kode program dalam bahasa yang bersangkutan (dalam praktikum ini, C++), dan realisasi fungsi serta prosedur sebaiknya memanfaatkan selector dan konstruktor sebisa mungkin [1]. Untuk menerapkan konsep ADT, deklarasi tipe, variabel, dan fungsi dipisahkan ke dalam file .h, sedangkan definisi fungsinya dipisahkan ke file .cpp [1].
+Pada file .h, spesifikasi type mengikuti kaidah bahasa yang dipakai. Spesifikasi primitif mengikuti kaidah dalam konteks prosedural, yaitu untuk fungsi dituliskan nama, domain, range, dan prekondisi jika ada, sedangkan untuk prosedur dituliskan initial state, final state, dan proses yang dilakukan [1]. Pada file .cpp, realisasi primitif berupa kode program dalam bahasa yang bersangkutan (dalam praktikum ini, C++), dan realisasi fungsi serta prosedur sebaiknya memanfaatkan selector dan konstruktor sebisa mungkin [1]. Untuk menerapkan konsep ADT, deklarasi tipe, variabel, dan fungsi dipisahkan ke dalam file .h, sedangkan definisi fungsinya dipisahkan ke file .cpp [1].
 
 ## Guided 
 
